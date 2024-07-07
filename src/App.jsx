@@ -7,7 +7,7 @@ function App() {
   return (
    <div>
     <NavBar />
-    <ItemListContainer saludo= "Bienvenidos a Palm!" />
+    <ItemListContainer saludo= "noplan" />
    </div>
   )   
 }

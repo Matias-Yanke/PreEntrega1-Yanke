@@ -12,8 +12,8 @@ const NavBar = () => {
 
         
         <ul className="nav-links">
-            <li>Gorras</li>
-            <li>Medias</li>
+            <li>Remeras</li>
+            <li>Buzos</li>
             <li>Accesorios</li>
         </ul>
     <CartWidget />
