@@ -24,4 +24,10 @@
     margin: 0;
     color: white;
   }
-  
+
+  .carritoRojo {
+    color: red;
+  }
+  .carritoVerde {
+    color: greenyellow;
+  }
