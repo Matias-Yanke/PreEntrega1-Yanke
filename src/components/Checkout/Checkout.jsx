@@ -6,6 +6,7 @@ import db from "../../db/db.js";
 import { collection, addDoc } from "firebase/firestore";
 import validateForm from "../../utils/validacionFormulario.js";
 import { toast } from "react-toastify";
+import "./Checkout.css";
 
 const Checkout = () => {
   const { carrito, precioTotal, vaciarCarrito } = useContext(CartContext);
@@ -47,12 +48,13 @@ const Checkout = () => {
         vaciarCarrito();
       });
   };
+
   return (
-    <div>
+    <div className="checkout-container">
       {idOrden ? (
-        <div>
+        <div className="order-confirmation">
           <h2>Orden generada</h2>
-          <p>su id es : {idOrden} </p>
+          <p>Su ID es: {idOrden}</p>
         </div>
       ) : (
         <Formulario

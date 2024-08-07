@@ -1,8 +1,9 @@
 import React from "react";
+import "./Formulario.css";
 
 const Formulario = ({ datosForm, guardarDatosInput, enviarOrden }) => {
   return (
-    <div>
+    <div className="form-container">
       <form onSubmit={enviarOrden}>
         <label>Nombre</label>
         <input
@@ -11,7 +12,7 @@ const Formulario = ({ datosForm, guardarDatosInput, enviarOrden }) => {
           value={datosForm.nombre}
           onChange={guardarDatosInput}
         />
-        <label>Telefono</label>
+        <label>Teléfono</label>
         <input
           type="text"
           name="telefono"
@@ -25,7 +26,7 @@ const Formulario = ({ datosForm, guardarDatosInput, enviarOrden }) => {
           value={datosForm.email}
           onChange={guardarDatosInput}
         />
-        <button type="submit">Enviar oden</button>
+        <button type="submit">Enviar orden</button>
       </form>
     </div>
   );

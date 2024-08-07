@@ -1,13 +1,15 @@
 import { Link } from "react-router-dom";
-const Item = ({producto}) => {
+import './Item.css';
+
+const Item = ({ producto }) => {
   return (
-    <div>
-    <img src={producto.imagen} width={200} alt="" />
-    <p>{producto.nombre}</p>
-    <p>precio: ${producto.precio} </p>
-    <Link to={ "/detail/" + producto.id} >VER DETALLE</Link>
-  </div>
+    <div className="item">
+      <img src={producto.imagen} alt={producto.nombre} className="item-image" />
+      <p className="item-name">{producto.nombre}</p>
+      <p className="item-price">Precio: ${producto.precio}</p>
+      <Link to={"/detail/" + producto.id} className="item-link">VER DETALLE</Link>
+    </div>
   );
 };
 
-export default Item
+export default Item;
